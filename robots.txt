@@ -3,8 +3,3 @@ Allow: /
 
 Sitemap: https://uzzian.web.id/sitemap.xml
 
-# Do not add school/client subdomains to SEO.
-# Important: robots.txt is host-specific. To block any subdomain
-# such as example.uzzian.web.id, serve a separate robots.txt there with:
-# User-agent: *
-# Disallow: /
