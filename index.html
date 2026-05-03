@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Uzzian - Platform Ujian Online Sekolah Siap Pakai</title>
-<meta name="description" content="Uzzian adalah platform ujian online siap pakai untuk sekolah dan lembaga pendidikan. Aktivasi cepat, tanpa instalasi, dengan subdomain sekolah profesional.">
+<meta name="description" content="Uzzian adalah platform ujian online siap pakai untuk sekolah dan lembaga pendidikan. Harga hemat, bisa mingguan, aktivasi cepat, tanpa instalasi, dengan subdomain sekolah profesional.">
 <meta name="keywords" content="ujian online, platform ujian online, aplikasi ujian sekolah, CBT online, ujian berbasis komputer, subdomain sekolah, Uzzian">
 <meta name="author" content="Uzzian">
 <meta name="robots" content="index, follow">
@@ -14,13 +14,13 @@
 <meta property="og:locale" content="id_ID">
 <meta property="og:site_name" content="Uzzian">
 <meta property="og:title" content="Uzzian - Platform Ujian Online Sekolah Siap Pakai">
-<meta property="og:description" content="Platform ujian online untuk sekolah dan lembaga pendidikan. Tanpa instalasi, aktivasi cepat, dan tersedia subdomain profesional untuk setiap sekolah.">
+<meta property="og:description" content="Platform ujian online untuk sekolah dan lembaga pendidikan. Harga hemat, bisa mingguan, tanpa instalasi, aktivasi cepat, dan tersedia subdomain profesional untuk setiap sekolah.">
 <meta property="og:url" content="https://uzzian.web.id/">
 <meta property="og:image" content="https://uzzian.web.id/logo.png">
 <meta property="og:image:alt" content="Logo Uzzian, platform ujian online sekolah">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Uzzian - Platform Ujian Online Sekolah Siap Pakai">
-<meta name="twitter:description" content="Solusi ujian online siap pakai untuk sekolah, aktif cepat tanpa instalasi, lengkap dengan subdomain sekolah.">
+<meta name="twitter:description" content="Solusi ujian online siap pakai untuk sekolah, harga hemat, bisa mingguan, aktif cepat tanpa instalasi, lengkap dengan subdomain sekolah.">
 <meta name="twitter:image" content="https://uzzian.web.id/logo.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -220,9 +220,192 @@
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.25rem;
   }
-  .feature-icon svg { width: 20px; height: 20px; stroke: var(--accent); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .feature-icon svg { width: 20px; height: 20px; color: var(--accent); stroke: currentColor; fill: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .feature-icon svg path,
+  .feature-icon svg circle,
+  .feature-icon svg rect {
+    fill: currentColor !important;
+    stroke: none !important;
+  }
+  .feature-icon svg line,
+  .feature-icon svg polyline {
+    stroke: currentColor !important;
+    fill: none !important;
+  }
   .feature-card h3 { font-size: 1rem; font-weight: 500; color: var(--navy); margin-bottom: 0.5rem; }
   .feature-card p { font-size: 0.88rem; color: var(--slate); font-weight: 300; line-height: 1.65; }
+
+  /* VALUE */
+  .value-band {
+    background: var(--navy);
+    color: rgba(255,255,255,0.88);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .value-band .section-label { color: #9fc7ff; }
+  .value-band .section-title { color: var(--white); }
+  .value-band .section-sub { color: rgba(255,255,255,0.68); }
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+  .value-item {
+    background: rgba(255,255,255,0.06);
+    padding: 1.6rem;
+  }
+  .value-item strong {
+    display: block;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+  }
+  .value-item span {
+    display: block;
+    color: rgba(255,255,255,0.66);
+    font-size: 0.86rem;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+  /* PRICING */
+  .pricing-section {
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .pricing-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 2rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+  .price-highlight {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--bg);
+  }
+  .price-option {
+    padding: 1.6rem;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+  }
+  .price-option:last-child { border-bottom: none; }
+  .price-kicker {
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+  }
+  .price-main {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--navy);
+  }
+  .price-main small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--slate);
+  }
+  .price-note {
+    color: var(--slate);
+    font-size: 0.86rem;
+    font-weight: 300;
+    margin-top: 0.65rem;
+  }
+  .price-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .price-details-intro {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    padding: 1.25rem;
+  }
+  .price-details-intro h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 0.35rem;
+  }
+  .price-details-intro p {
+    color: var(--slate);
+    font-size: 0.86rem;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+  .price-toggle {
+    align-self: flex-start;
+    background: var(--accent);
+    color: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    padding: 0.72rem 1.15rem;
+    font-family: inherit;
+    font-size: 0.86rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .price-toggle:hover {
+    background: #1f5593;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37,99,168,0.22);
+  }
+  .price-toggle:active { transform: translateY(0); }
+  .price-table-panel {
+    display: none;
+  }
+  .price-table-panel.is-open {
+    display: block;
+  }
+  .price-table-wrap {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow-x: auto;
+    background: var(--white);
+  }
+  .price-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    font-size: 0.84rem;
+  }
+  .price-table th,
+  .price-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .price-table th {
+    background: var(--accent-soft);
+    color: var(--navy);
+    font-weight: 500;
+  }
+  .price-table tr:last-child td { border-bottom: none; }
+  .price-table td:not(:first-child) { color: var(--slate); }
+  .pricing-footnote {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-top: 0.85rem;
+    line-height: 1.6;
+  }
 
   /* HOW IT WORKS */
   .how-wrap {
@@ -326,6 +509,7 @@
     .stats { flex-direction: column; }
     .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
     .stat-item:last-child { border-bottom: none; }
+    .pricing-layout { grid-template-columns: 1fr; }
   }
 </style>
 <script type="application/ld+json">
@@ -355,14 +539,16 @@
       "applicationCategory": "EducationalApplication",
       "operatingSystem": "Web",
       "url": "https://uzzian.web.id/",
-      "description": "Platform ujian online siap pakai untuk sekolah dan lembaga pendidikan dengan aktivasi cepat dan subdomain profesional.",
+      "description": "Platform ujian online siap pakai untuk sekolah dan lembaga pendidikan dengan harga hemat, pembayaran mingguan, aktivasi cepat, dan domain profesional.",
       "provider": {
         "@id": "https://uzzian.web.id/#organization"
       },
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
-        "priceCurrency": "IDR"
+        "price": "500",
+        "priceCurrency": "IDR",
+        "description": "Harga mulai Rp 500 per siswa untuk paket mingguan dan Rp 1.000 per siswa untuk paket bulanan."
       }
     },
     {
@@ -392,6 +578,22 @@
             "@type": "Answer",
             "text": "Ya. Setiap sekolah dapat menggunakan subdomain khusus seperti smkn1.uzzian.web.id."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa harga Uzzian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Harga Uzzian mulai Rp 1.000 per siswa untuk paket bulanan dan Rp 500 per siswa untuk paket mingguan. Harga menyesuaikan jumlah siswa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah bisa bayar mingguan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya. Uzzian menyediakan paket mingguan untuk ujian singkat, tryout, seleksi, atau kebutuhan fleksibel lainnya."
+          }
         }
       ]
     }
@@ -415,14 +617,14 @@
   <div class="hero-bg"></div>
   <div class="hero-pattern"></div>
 
-  <div class="hero-badge"><span class="badge-dot"></span> Platform Ujian Online Profesional</div>
+  <div class="hero-badge"><span class="badge-dot"></span> Harga hemat, bisa bulanan atau mingguan</div>
 
   <h1 style="font-family:'Lora',serif; font-size:clamp(2.2rem,5vw,3.8rem); font-weight:600; line-height:1.15; color:var(--navy); max-width:700px; letter-spacing:-0.02em; position:relative; z-index:1;">
     Ujian Online <em style="font-style:italic; color:var(--accent);">Tanpa Ribet</em>,<br>Langsung Pakai
   </h1>
 
   <p style="margin-top:1.25rem; font-size:1.05rem; font-weight:300; color:var(--slate); max-width:520px; position:relative; z-index:1;">
-    Solusi ujian online siap pakai untuk sekolah dan lembaga pendidikan. Tanpa instalasi, tanpa konfigurasi rumit - langsung aktif dengan subdomain sekolah Anda.
+    Solusi ujian online siap pakai untuk sekolah dan lembaga pendidikan. Mulai Rp 500/siswa per minggu, tanpa instalasi, langsung aktif dengan domain nama.uzzian.web.id.
   </p>
 
   <div class="hero-actions">
@@ -447,20 +649,20 @@
 <!-- STATS -->
 <section class="stats" aria-label="Ringkasan layanan Uzzian">
   <div class="stat-item" data-delay="0">
-    <div class="stat-num">100%</div>
-    <div class="stat-label">Online</div>
+    <div class="stat-num">Rp 500</div>
+    <div class="stat-label">Mulai per siswa/minggu</div>
   </div>
   <div class="stat-item" data-delay="100">
-    <div class="stat-num">&lt; 10 menit</div>
-    <div class="stat-label">Waktu aktivasi</div>
+    <div class="stat-num">Mingguan</div>
+    <div class="stat-label">Pembayaran fleksibel</div>
   </div>
   <div class="stat-item" data-delay="200">
-    <div class="stat-num">0</div>
-    <div class="stat-label">Instalasi diperlukan</div>
+    <div class="stat-num">Domain</div>
+    <div class="stat-label">nama.uzzian.web.id</div>
   </div>
   <div class="stat-item" data-delay="300">
-    <div class="stat-num">Subdomain</div>
-    <div class="stat-label">Per sekolah tersedia</div>
+    <div class="stat-num">0</div>
+    <div class="stat-label">Instalasi diperlukan</div>
   </div>
 </section>
 
@@ -468,8 +670,8 @@
 <section id="keunggulan">
   <div class="section-inner">
     <div class="section-label">Keunggulan</div>
-    <h2 class="section-title">Dirancang untuk kemudahan<br>lembaga pendidikan</h2>
-    <p class="section-sub">Tanpa teknis yang rumit. Kami tangani infrastrukturnya, Anda fokus pada ujian.</p>
+    <h2 class="section-title">Dirancang untuk hemat biaya<br>dan mudah dipakai</h2>
+    <p class="section-sub">Tanpa teknis yang rumit. Kami tangani infrastrukturnya, Anda fokus pada ujian, dengan biaya yang tetap ringan untuk sekolah.</p>
 
     <div class="features-grid">
       <div class="feature-card" data-delay="0">
@@ -486,21 +688,72 @@
       </div>
       <div class="feature-card" data-delay="100">
         <div class="feature-icon">
-          <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#5C5F62" d="M13.903 8c.06.629.097 1.292.097 2a1 1 0 01-2 0c0-.713-.039-1.378-.105-2H8.092c-.139 1.33-.14 2.67-.004 4H10a1 1 0 010 2H8.416c.469 2.08 1.202 3.41 1.585 4 0 0 .789.013.926.002a1.008 1.008 0 011.07.925 1 1 0 01-.924 1.07C10.979 20.004 10 20 10 20 4.486 20 0 15.514 0 10 0 4.485 4.486 0 10 0s10 4.485 10 10c0 .379-.036.749-.079 1.116a1.001 1.001 0 01-1.987-.233c.035-.291.066-.583.066-.883 0-.692-.098-1.36-.263-2h-3.834zM9.988 2.036c-.386.606-1.1 1.931-1.564 3.964h3.137c-.466-2.033-1.185-3.358-1.573-3.964zM2.263 12h3.819a21.604 21.604 0 01-.095-1.996c0-.67.033-1.338.096-2.004h-3.82A7.946 7.946 0 002 10a7.96 7.96 0 00.263 2zm.819 2a8.031 8.031 0 004.437 3.601A16.293 16.293 0 016.371 14H3.082zm3.291-8a16.235 16.235 0 011.15-3.603A8.03 8.03 0 003.082 6h3.291zm7.239 0h3.305a8.029 8.029 0 00-4.465-3.612A16.128 16.128 0 0113.612 6z"/><path fill="#5C5F62" d="M15.223 18.945l-2.55-5.61a.5.5 0 01.662-.662l5.61 2.55a.5.5 0 01.017.903l-1.742.87a.5.5 0 00-.223.224l-.871 1.742a.5.5 0 01-.903-.017z"/></svg>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 491.52 491.52" style="enable-background:new 0 0 491.52 491.52;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M491.52,419.84V0H0v419.84h153.6v51.2h-40.96v20.48h266.24v-20.48h-40.96v-51.2H491.52z M20.48,20.48h450.56v317.44H20.48
+			V20.48z M317.44,471.04H174.08v-51.2h143.36V471.04z M20.48,399.36V358.4h450.56v40.96H20.48z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="389.12" y="81.92" width="20.48" height="20.48"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="348.16" y="81.92" width="20.48" height="20.48"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="102.4" y="81.92" width="194.56" height="20.48"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon points="163.375,181.435 148.79,231.07 140.835,205.82 121.305,205.82 113.35,231.07 98.765,181.435 79.115,187.205 
+			103.19,269.125 122.78,269.315 131.07,242.99 139.365,269.315 158.955,269.125 183.025,187.205 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon points="278.065,181.435 263.48,231.07 255.525,205.82 235.995,205.82 228.04,231.07 213.455,181.435 193.805,187.205 
+			217.88,269.125 237.47,269.315 245.76,242.995 254.05,269.315 273.64,269.125 297.715,187.205 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon points="392.75,181.435 378.165,231.07 370.215,205.82 350.685,205.82 342.73,231.07 328.145,181.435 308.495,187.205 
+			332.565,269.125 352.155,269.315 360.45,242.99 368.74,269.315 388.33,269.125 412.4,187.205 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M40.96,40.96v276.48h409.6V40.96H40.96z M430.08,296.96H61.44v-153.6h368.64V296.96z M430.08,122.88H61.44V61.44h368.64
+			V122.88z"/>
+	</g>
+</g>
+</svg>
         </div>
-        <h3>Domain Sekolah Sendiri</h3>
-        <p>Setiap sekolah mendapat subdomain khusus seperti <em>smkn1.uzzian.web.id</em> - terasa lebih profesional dan terpercaya.</p>
+        <h3>Domain Tiap Lembaga</h3>
+        <p>Setiap lembaga mendapat domain khusus seperti <em>smkn123smg.uzzian.web.id</em> - terasa lebih profesional dan terpercaya.</p>
       </div>
       <div class="feature-card" data-delay="200">
         <div class="feature-icon">
-          <svg fill="#000000" width="800px" height="800px" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>building-solid</title>
-    <path d="M31,8H22V33H33V10A2,2,0,0,0,31,8ZM26,25H24V23h2Zm0-5H24V18h2Zm0-5H24V13h2Zm4,10H28V23h2Zm0-5H28V18h2Zm0-5H28V13h2Z" class="clr-i-solid clr-i-solid-path-1"></path><path d="M17.88,3H6.12A2.12,2.12,0,0,0,4,5.12V33H9V30h6v3h5V5.12A2.12,2.12,0,0,0,17.88,3ZM9,25H7V23H9Zm0-5H7V18H9Zm0-5H7V13H9Zm0-5H7V8H9Zm4,15H11V23h2Zm0-5H11V18h2Zm0-5H11V13h2Zm0-5H11V8h2Zm4,15H15V23h2Zm0-5H15V18h2Zm0-5H15V13h2Zm0-5H15V8h2Z" class="clr-i-solid clr-i-solid-path-2"></path>
-    <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+<svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+
+<g id="layer1">
+
+<path d="M 0 2 L 0 18 L 20 18 L 20 17 L 1 17 L 1 2 L 0 2 z M 2.4746094 4.984375 C 2.0944553 5.0037586 1.7783843 5.5000744 2.1464844 5.8535156 L 6.1464844 9.8535156 C 6.2984793 10.005257 6.5303951 10.042993 6.7226562 9.9472656 L 10.400391 8.1074219 L 16.232422 13.939453 L 13.404297 13.939453 L 14.464844 15 L 18 15 L 18 11.464844 L 16.939453 10.404297 L 16.939453 13.232422 L 10.853516 7.1464844 C 10.701521 6.9947444 10.469605 6.9570044 10.277344 7.0527344 L 6.5996094 8.8925781 L 2.8535156 5.1464844 C 2.7357018 5.0237844 2.6013274 4.9779138 2.4746094 4.984375 z " style="fill:#222222;fill-opacity:1;stroke:none;stroke-width:0px;"/>
+
+</g>
+
 </svg>
         </div>
-        <h3>Multi Sekolah</h3>
-        <p>Satu platform dipakai oleh banyak lembaga. Kelola ujian dari berbagai sekolah dalam satu sistem terpusat.</p>
+        <h3>Harga Lebih Ringan</h3>
+        <p>Biaya dibuat ramah untuk sekolah dan lembaga pendidikan, mulai dari Rp 500/siswa per minggu atau Rp 1.000/siswa per bulan.</p>
       </div>
       <div class="feature-card" data-delay="300">
         <div class="feature-icon">
@@ -513,8 +766,8 @@
 <path d="M25,9v1.3c0,0.9-0.8,1.7-1.7,1.7h-0.6c-0.9,0-1.7-0.8-1.7-1.7V9"/>
 </svg>
         </div>
-        <h3>Akses dari Perangkat Apapun</h3>
-        <p>Siswa dapat mengikuti ujian dari laptop, tablet, maupun smartphone tanpa perlu mengunduh aplikasi.</p>
+        <h3>Bisa Akses Berbagai jenis Device</h3>
+        <p>Siswa dapat mengikuti ujian dari laptop, tablet, maupun smartphone. Ujian lebih simpel, efisien dan fleksibel.</p>
       </div>
       <div class="feature-card" data-delay="400">
         <div class="feature-icon">
@@ -533,8 +786,36 @@
         <div class="feature-icon">
           <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
-        <h3>Infrastruktur Stabil</h3>
-        <p>Dibangun di atas server yang andal dan aplikasi dengan performa tinggi. Bisa handle ribuan pengguna secara bersamaan.</p>
+        <h3>Server Ujian Stabil</h3>
+        <p>Menggunakan aplikasi server ujian dengan performa terbaik untuk menghandle ribuan siswa sekaligus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE -->
+<section class="value-band" id="kenapa-uzzian">
+  <div class="section-inner">
+    <div class="section-label">Kenapa Uzzian</div>
+    <h2 class="section-title">Lebih hemat, tetap terlihat profesional</h2>
+    <p class="section-sub">Uzzian cocok untuk sekolah yang ingin punya sistem ujian online tanpa biaya besar di awal. Paket bisa disesuaikan dengan jumlah siswa dan durasi kebutuhan.</p>
+
+    <div class="value-grid" aria-label="Keunggulan utama Uzzian">
+      <div class="value-item">
+        <strong>Harga lebih murah</strong>
+        <span>Pilihan paket dibuat ringan agar sekolah bisa mulai ujian online tanpa beban biaya yang berat.</span>
+      </div>
+      <div class="value-item">
+        <strong>Sudah dapat domain</strong>
+        <span>Sekolah mendapat alamat seperti nama.uzzian.web.id agar akses ujian mudah diingat dan terlihat rapi.</span>
+      </div>
+      <div class="value-item">
+        <strong>Bisa mingguan</strong>
+        <span>Tersedia pembayaran mingguan untuk ujian singkat, tryout, seleksi, atau masa pakai yang fleksibel.</span>
+      </div>
+      <div class="value-item">
+        <strong>Langsung siap pakai</strong>
+        <span>Tidak perlu instal server atau urus konfigurasi teknis. Setelah aktif, sekolah bisa langsung menjalankan ujian.</span>
       </div>
     </div>
   </div>
@@ -606,6 +887,99 @@
   </div>
 </section>
 
+<!-- PRICING -->
+<section class="pricing-section" id="harga">
+  <div class="section-inner">
+    <div class="section-label">Harga</div>
+    <h2 class="section-title">Pilih bulanan atau mingguan</h2>
+    <p class="section-sub">Harga menyesuaikan jumlah siswa. Semakin banyak siswa, biaya per siswa semakin efisien.</p>
+
+    <div class="pricing-layout">
+      <div class="price-highlight">
+        <div class="price-option">
+          <div class="price-kicker">Bulanan</div>
+          <div class="price-main">Mulai Rp 1.000 <small>/ siswa</small></div>
+          <p class="price-note">Cocok untuk sekolah yang memakai Uzzian secara rutin sepanjang periode ujian.</p>
+        </div>
+        <div class="price-option">
+          <div class="price-kicker">Mingguan</div>
+          <div class="price-main">Mulai Rp 500 <small>/ siswa</small></div>
+          <p class="price-note">Cocok untuk tryout, ujian singkat, seleksi, atau kebutuhan beberapa minggu saja.</p>
+        </div>
+      </div>
+
+      <div class="price-details">
+        <div class="price-details-intro">
+          <h3>Harga lengkap disesuaikan jumlah siswa</h3>
+          <p>Lihat rincian paket kalau ingin membandingkan estimasi bulanan dan mingguan berdasarkan jumlah peserta.</p>
+        </div>
+        <button class="price-toggle" type="button" id="price-toggle" aria-expanded="false" aria-controls="price-table-panel">Tampilkan harga lengkap</button>
+        <div class="price-table-panel" id="price-table-panel" hidden>
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>Jumlah siswa</th>
+                  <th>Bulanan</th>
+                  <th>Mingguan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&lt; 100</td>
+                  <td>Rp 1.000/siswa</td>
+                  <td>Rp 500/siswa</td>
+                </tr>
+                <tr>
+                  <td>100 - 150</td>
+                  <td>Rp 125.000</td>
+                  <td>Rp 35.000</td>
+                </tr>
+                <tr>
+                  <td>150 - 200</td>
+                  <td>Rp 150.000</td>
+                  <td>Rp 50.000</td>
+                </tr>
+                <tr>
+                  <td>201 - 300</td>
+                  <td>Rp 200.000</td>
+                  <td>Rp 60.000</td>
+                </tr>
+                <tr>
+                  <td>301 - 400</td>
+                  <td>Rp 250.000</td>
+                  <td>Rp 75.000</td>
+                </tr>
+                <tr>
+                  <td>401 - 500</td>
+                  <td>Rp 300.000</td>
+                  <td>Rp 90.000</td>
+                </tr>
+                <tr>
+                  <td>501 - 750</td>
+                  <td>Rp 350.000</td>
+                  <td>Rp 100.000</td>
+                </tr>
+                <tr>
+                  <td>751 - 1000</td>
+                  <td>Rp 400.000</td>
+                  <td>Rp 150.000</td>
+                </tr>
+                <tr>
+                  <td>1001 - 2000</td>
+                  <td>Rp 600.000</td>
+                  <td>Rp 180.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="pricing-footnote">Harga sudah termasuk domain sekolah dalam format nama.uzzian.web.id. Untuk kebutuhan lebih dari 2.000 siswa, hubungi kami untuk estimasi khusus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section" id="kontak">
   <div class="section-label">Cek Harga</div>
@@ -666,6 +1040,19 @@
   }, { threshold: 0.15 });
 
   document.querySelectorAll('.stat-item, .feature-card, .step, .how-visual').forEach(el => observer.observe(el));
+
+  const priceToggle = document.getElementById('price-toggle');
+  const priceTablePanel = document.getElementById('price-table-panel');
+
+  if (priceToggle && priceTablePanel) {
+    priceToggle.addEventListener('click', () => {
+      const isOpen = priceToggle.getAttribute('aria-expanded') === 'true';
+      priceToggle.setAttribute('aria-expanded', String(!isOpen));
+      priceToggle.textContent = isOpen ? 'Tampilkan harga lengkap' : 'Sembunyikan harga lengkap';
+      priceTablePanel.hidden = isOpen;
+      priceTablePanel.classList.toggle('is-open', !isOpen);
+    });
+  }
 </script>
 </body>
 </html>
